@@ -32,6 +32,29 @@ La Fase 2 se agregaron varias cosas como la clase campeonato que es la que permi
 - Exportación de resultados en 4 formatos: CSV, JSON, TXT y XLSX
 - Nuevas clases: "Campeonato", "Inventario", "Item" y "Exportador"
 
+# Lo nuevo en la Fase 3 — Interfaz gráfica con Pygame
+En la Fase 3 se reemplazó completamente la consola por una interfaz 
+gráfica visual construida con la librería Pygame. El juego ahora se 
+juega con clics del mouse, sin escribir nada en la terminal.
+
+Pantallas implementadas:
+- Pantalla de inicio: el jugador escribe su nombre, el nombre de su 
+  vehículo y elige el tipo (Carro, Moto o Camión) con botones visuales
+- Pantalla de preparación: antes de cada carrera muestra la distancia, 
+  la dificultad asignada y los rivales que van a competir
+- Pantalla de carrera: muestra en tiempo real las barras de progreso de 
+  todos los vehículos, el turno actual y dos botones: Acelerar y Usar Turbo
+- Pantalla de resultado por carrera: al terminar cada carrera muestra el 
+  podio (1°, 2°, 3°) y los puntos obtenidos por el jugador
+- Pantalla final del campeonato: muestra la clasificación acumulada de 
+  las 3 carreras y permite exportar los resultados en CSV, JSON, TXT o XLSX 
+  con un botón por formato
+
+Tecnología usada:
+- Pygame para toda la interfaz visual, botones, barras de progreso y animaciones
+- Se mantuvo toda la lógica de la Fase 2 en logica.py sin modificarla, 
+  separando completamente la interfaz de la lógica del juego (main.py usa logica.py)
+
 # ¿Cómo correrlo?
 
 1. Descargar el repositorio:
