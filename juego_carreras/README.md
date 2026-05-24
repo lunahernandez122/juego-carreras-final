@@ -1,11 +1,10 @@
-# Juego de Carreras 🏎️
+# Juego de Carreras 
 
-**Kevin Hernández Henao & Luna Hernandez Montoya**  
+Kevin Hernández Henao y Luna Hernandez Montoya
 Programación Orientada a Objetos — Pascual Bravo
 
----
 
-## ¿De qué va el juego?
+# ¿De qué va el juego?
 
 Es un juego de carreras por turnos. Tú eliges tu vehículo (carro, moto o camión), le pones nombre, y te metes a un campeonato de 3 carreras contra rivales generados aleatoriamente.
 
