@@ -50,10 +50,14 @@ Pantallas implementadas:
   las 3 carreras y permite exportar los resultados en CSV, JSON, TXT o XLSX 
   con un botón por formato
 
-Tecnología usada:
-- Pygame para toda la interfaz visual, botones, barras de progreso y animaciones
-- Se mantuvo toda la lógica de la Fase 2 en logica.py sin modificarla, 
-  separando completamente la interfaz de la lógica del juego (main.py usa logica.py)
+  # ¿Cómo se juega?
+
+1. Ingresa tu nombre de piloto y el nombre de tu vehículo
+2. Elige el tipo de vehículo:  Carro (+10m/turno), Moto (+15m/turno) o  Camión (+5m/turno)
+3. En cada turno puedes acelerar normalmente o usar un turbo para avanzar más
+4. Aparecen obstáculos aleatorios que pueden hacerte retroceder o ganar ventaja
+5. Al terminar las 3 carreras se muestra la clasificación final con puntos acumulados
+6. Puedes exportar los resultados en el formato que prefieras
 
 # ¿Cómo correrlo?
 
@@ -77,22 +81,21 @@ python main.py
 
 # Archivos del proyecto
 
-```
 juego_carreras/
 ├── main.py          # interfaz gráfica con pygame y control de pantallas
 ├── logica.py        # todas las clases del juego
 ├── requirements.txt
 └── README.md
-```
 
-## Tecnologías
+
+# Tecnologías
 
 - Python 3.10+
 - pygame (interfaz gráfica)
 - openpyxl (exportación a Excel, opcional)
 - Módulos estándar: `random`, `json`, `csv`, `abc`
 
-## Conceptos de POO que aplicamos
+# Conceptos de POO que aplicamos
 
 | Concepto | Dónde lo usamos |
 |---|---|
