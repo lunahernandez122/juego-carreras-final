@@ -1,53 +1,58 @@
 # Juego de Carreras 
 
-Kevin Hernández Henao y Luna Hernandez Montoya
-Programación Orientada a Objetos — Pascual Bravo
+# Equipo
 
+- Kevin Hernández Henao
+- Luna Hernández Montoya
 
-# ¿De qué va el juego?
+Programación Orientada a Objetos — Institución Universitaria Pascual Bravo
 
-Es un juego de carreras por turnos. Tú eliges tu vehículo (carro, moto o camión), le pones nombre, y te metes a un campeonato de 3 carreras contra rivales generados aleatoriamente.
+# Descripción del juego
 
-En cada turno decides si acelerar normal o gastar un turbo para ir más rápido. Los rivales se mueven solos y también tienen sus turbos. Por el camino pueden aparecer obstáculos (baches, derrames de aceite) o cosas buenas (viento a favor, turbos extra). Al final de cada carrera se reparten puntos al estilo F1 y se arma una clasificación acumulada.
+Juego de carreras por turnos desarrollado en Python, donde el jugador compite contra rivales aleatorios  controlados por la maquina  para llegar primero a la meta.
 
-Cuando termina el campeonato podés exportar los resultados en CSV, JSON, TXT o XLSX.
+# Lo que había en la Fase 1
+En la primera versión el jugador podía:
+- Elegir la distancia de la carrera (100, 500, 1000 o 2000 metros)
+- Registrar su vehículo con nombre y tipo (carro, moto o camión)
+- Definir la cantidad de rivales manualmente o de forma aleatoria
+- Elegir la dificultad del juego
+- Jugar en modo manual o automático
 
-## ¿Cómo correrlo?
+Cada vehículo avanzaba según su tipo, podía activar turbos y encontraba obstáculos aleatorios. La carrera terminaba cuando un vehículo alcanzaba la meta.
 
-Primero clonás el repo y entrás a la carpeta:
+# Lo nuevo en la Fase 2 
+La Fase 2 se agregaron varias cosas como la clase campeonato que es la que permite que se juguen tres carreras para hacerlo mas completo:
 
-```bash
-git clone <url-del-repo>
+- Sistema de campeonato de 3 carreras consecutivas con acumulación de puntos al estilo Fórmula 1
+- Dificultad aleatoria en cada carrera (Fácil, Normal, Difícil) que afecta turbos, obstáculos y rivales
+- Habilidades especiales únicas para cada tipo de vehículo (esta al final no se utilizo en el juego es para mostrar la abstracción)
+- Sistema de inventario con ítems consumibles por vehículo
+- Clasificación final acumulada de todos los participantes al terminar el campeonato
+- Exportación de resultados en 4 formatos: CSV, JSON, TXT y XLSX
+- Nuevas clases: "Campeonato", "Inventario", "Item" y "Exportador"
+
+# ¿Cómo correrlo?
+
+1. Descargar el repositorio:
+git clone URL_DEL_REPOSITORIO
+
+2. Entrar a la carpeta del proyecto:
 cd juego_carreras
-```
 
-Se recomienda usar un entorno virtual:
-
-```bash
+3. Crear y activar el entorno virtual:
 python -m venv venv
-
-# Windows:
 venv\Scripts\activate
 
-# macOS / Linux:
-source venv/bin/activate
-```
-
-Instalás las dependencias:
-
-```bash
+4. Instalar las dependencias necesarias:
 pip install -r requirements.txt
-```
 
-Y lo ejecutás:
-
-```bash
+5. Ejecutar el juego:
 python main.py
-```
 
-> `openpyxl` es opcional, solo lo necesitás si querés exportar a XLSX.
+> "openpyxl" es una librería opcional utilizada para exportar archivos en formato XLSX.
 
-## Archivos del proyecto
+# Archivos del proyecto
 
 ```
 juego_carreras/
