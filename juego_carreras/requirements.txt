@@ -1,0 +1,2 @@
+pygame>=2.1.0
+openpyxl>=3.0.0   # opcional — necesario solo para exportar a XLSX
