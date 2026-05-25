@@ -80,6 +80,10 @@ pip install -r requirements.txt
 5. Ejecutar el juego:
 python main.py
 
+OJO: En dado caso que no ejecute sea por problemas con pygame o algún otro,
+sugiero instalar una versión igual o menor a la 3.13.0, ya que estas versiones soportan
+dicha librería.
+
 > "openpyxl" es una librería opcional utilizada para exportar archivos en formato XLSX.
 
 # Archivos del proyecto
