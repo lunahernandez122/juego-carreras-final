@@ -61,6 +61,12 @@ Pantallas implementadas:
 
 # ¿Cómo correrlo?
 
+# ¿Qué es el entorno virtual y por qué lo usamos?
+Un entorno virtual (venv) es una carpeta aislada donde se instalan 
+las librerías del proyecto sin afectar el resto del computador. 
+Lo usamos para que cualquiera pueda instalar exactamente las mismas 
+dependencias que usamos nosotros durante el desarrollo.
+
 1. Descargar el repositorio:
 git clone URL_DEL_REPOSITORIO
 
