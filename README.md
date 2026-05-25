@@ -1,15 +1,15 @@
 # Juego de Carreras 
 
 # Equipo
-
 - Kevin Hernández Henao
 - Luna Hernández Montoya
 
 Programación Orientada a Objetos — Institución Universitaria Pascual Bravo
 
 # Descripción del juego
-
-Juego de carreras por turnos desarrollado en Python, donde el jugador compite contra rivales aleatorios  controlados por la maquina  para llegar primero a la meta.
+Juego de carreras por turnos desarrollado en Python, 
+donde el jugador compite contra rivales aleatorios 
+controlados por la máquina para llegar primero a la meta.
 
 # Lo que había en la Fase 1
 En la primera versión el jugador podía:
@@ -50,16 +50,13 @@ Pantallas implementadas:
   las 3 carreras y permite exportar los resultados en CSV, JSON, TXT o XLSX 
   con un botón por formato
 
-  # ¿Cómo se juega?
-
+# ¿Cómo se juega?
 1. Ingresa tu nombre de piloto y el nombre de tu vehículo
-2. Elige el tipo de vehículo:  Carro (+10m/turno), Moto (+15m/turno) o  Camión (+5m/turno)
+2. Elige el tipo de vehículo:  Carro (+10m/turno), Moto (+15m/turno) o Camión (+5m/turno)
 3. En cada turno puedes acelerar normalmente o usar un turbo para avanzar más
 4. Aparecen obstáculos aleatorios que pueden hacerte retroceder o ganar ventaja
 5. Al terminar las 3 carreras se muestra la clasificación final con puntos acumulados
 6. Puedes exportar los resultados en el formato que prefieras
-
-# ¿Cómo correrlo?
 
 # ¿Qué es el entorno virtual y por qué lo usamos?
 Un entorno virtual (venv) es una carpeta aislada donde se instalan 
@@ -86,7 +83,6 @@ python main.py
 > "openpyxl" es una librería opcional utilizada para exportar archivos en formato XLSX.
 
 # Archivos del proyecto
-
 juego_carreras/
 ├── main.py          # interfaz gráfica con pygame y control de pantallas
 ├── logica.py        # todas las clases del juego
@@ -95,14 +91,12 @@ juego_carreras/
 
 
 # Tecnologías
-
 - Python 3.10+
 - pygame (interfaz gráfica)
 - openpyxl (exportación a Excel, opcional)
 - Módulos estándar: `random`, `json`, `csv`, `abc`
 
 # Conceptos de POO que aplicamos
-
 | Concepto | Dónde lo usamos |
 |---|---|
 | Abstracción | `Vehiculo` es una clase abstracta con métodos `acelerar` y `habilidad_especial` que cada subclase debe implementar |
