@@ -65,10 +65,10 @@ Lo usamos para que cualquiera pueda instalar exactamente las mismas
 dependencias que usamos nosotros durante el desarrollo.
 
 1. Descargar el repositorio:
-git clone URL_DEL_REPOSITORIO
+git clone https://github.com/lunahernandez122/juego-carreras-final
 
 2. Entrar a la carpeta del proyecto:
-cd juego_carreras
+cd juego-carreras-final
 
 3. Crear y activar el entorno virtual:
 python -m venv venv
