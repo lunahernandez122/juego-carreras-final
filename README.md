@@ -71,8 +71,8 @@ git clone URL_DEL_REPOSITORIO
 cd juego_carreras
 
 3. Crear y activar el entorno virtual:
-python -m venv venv
-venv\Scripts\activate
+- python -m venv venv
+- venv\Scripts\activate
 
 4. Instalar las dependencias necesarias:
 pip install -r requirements.txt
